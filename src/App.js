@@ -3,14 +3,15 @@ import Header from "./component/Header";
 import Navbar from './component/Navbar';
 import Note from './component/Note';
 import Footer from './component/Footer';
+import AboutUs from './component/AboutUs';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-
+    <div className="container">
+    <Navbar />
   <Header />
-  <Navbar />
   <Note />
   <Footer />
     </div>

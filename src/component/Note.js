@@ -1,9 +1,10 @@
 import React from 'react';
+import NoteList from './NoteList';
 
 const Note = () =>{
     return (
         <div>
-            <p>All Notes</p>
+          <NoteList/>
         </div>
     )
 }

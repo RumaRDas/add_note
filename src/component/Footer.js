@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
     return (
         <div>
-            <p>Footer</p>
+            <p className="text-muted text-center">&copy; All Rights reserved \ rp soluation</p>
         </div>
     )
 }
 
-export default Footer
+export default Footer;
