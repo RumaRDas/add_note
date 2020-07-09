@@ -1,0 +1,10 @@
+.footer_style{
+    background-color: rgb(155, 199, 173);
+    height: 30px;
+}
+.jumbotron {
+    background-color:  rgb(155, 199, 173);
+    height: 150px;
+    text-align: center;
+    padding-top: 10px;
+}
