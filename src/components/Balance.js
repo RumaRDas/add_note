@@ -4,7 +4,7 @@ import { GlobalContext} from '../context/GlobalStatus';
 
 export const Balance = () => {
     const { tracsactions} = useContext(GlobalContext);
-    const amounts = tracsactions.map(tracsaction => tracsaction.amount);
+    const amounts =  tracsactions.map( tracsaction =>  tracsaction.amount);
     const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2)
     return (
         <>

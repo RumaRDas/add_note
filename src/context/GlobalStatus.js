@@ -2,12 +2,7 @@ import React, { createContext, useReducer } from 'react';
 import Appreducer from './Appreducer';
 // Initial State
 const initialState = {
-    tracsactions: [
-        { id: 1, text: 'Flower', amount: -20 },
-        { id: 2, text: 'Salary', amount: 300 },
-        { id: 3, text: 'Book', amount: -10 },
-        { id: 4, text: 'Camera', amount: 150 },
-    ]
+    tracsactions: [ ]
 }
 // Create context
 export const GlobalContext = createContext(initialState);
@@ -23,11 +18,17 @@ export const GlobalProvider = ({ children }) => {
             payload: id
         });
     }
-
+    function addTransaction(id){
+        dispatch({
+            type: 'ADD_TRANSACTION',
+            payload: id
+        });
+    }
     return (
         <GlobalContext.Provider value={{ 
             tracsactions: state.tracsactions,
-            deleteTransaction
+            deleteTransaction,
+            addTransaction
         }}>
         {children}
         </GlobalContext.Provider>
