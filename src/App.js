@@ -10,10 +10,10 @@ import './App.css';
 function App() {
   return (
     <div className="container">
-    <Navbar />
-  <Header />
-  <Note />
-  <Footer />
+      <Navbar />
+      <Header />
+      <Note />
+      <Footer />
     </div>
   );
 }

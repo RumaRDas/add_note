@@ -1,9 +1,13 @@
 import React from 'react';
-
-const NoteList = () => {
+import Note from './Note'
+const NoteList = (props) => {
+    console.log( props)
     return (
-        <div>
-            <p> All Note list goes here</p>
+        <div className="card">
+        <div className="card-body">
+        <h3 className="card-title">{props.title}</h3>
+        <p className="card-text">{props.des}</p>
+        </div>    
         </div>
     )
 }
